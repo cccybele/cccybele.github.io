@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>無聊樂坊</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <style>
+        #madal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            z-index: 9999;
+        }
+
+        .point {
+            opacity: 1;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: point 1s linear forwards;
+        }
+
+        @keyframes point {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .pic {
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .p2 {
+            animation: p2 1.5s linear 1s forwards;
+        }
+
+        @keyframes p2 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .p3 {
+            animation: p3 2s linear 2.5s forwards;
+        }
+
+        @keyframes p3 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="madal">
+        <div class="point"></div>
+        <div class="pic p2">
+            <img src="img/taiji.png" alt="">
+        </div>
+        <div class="pic p3">
+            <img src="img/2000px-bigseal.png" alt="">
+        </div>
+    </div>
+    <nav id="nav1" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-01.png" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-around" style="width:90%;margin-left:10%;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content1" style="color:#000;">聊聊我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content2" style="color:#000;">聊聊樂器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content3" style="color:#000;">聊聊飲料</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content4" style="color:#000;">聊聊餅乾</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="nav2">
+        <marquee onMouseOver="this.stop()" onMouseOut="this.start()" class="slider">
+            <h6 class="title">活動訊息</h6>
+            <p>每週六下午2:00~6:00舉行即興演奏會～固定曲目為三首，其餘的現場即興演出哦！歡迎愛樂朋友們來參加哦！</p>
+        </marquee>
+    </div>
+    <div id="content1">
+        <div class="container">
+            <div class="f-r">
+                <div class="f-r_top" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                    <div class="title1">
+                        <h4>緣&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;起</h4>
+                    </div>
+                    <div class="main1">
+                        <p>一個小妹妹和一群老樂師時常在談琴論樂。一天，有一個弦外之音傳來～「你們的音樂具有正能量。可以重振古風，移風易俗。」於是成立了此樂坊，希望能聚集更多志同道合的愛樂人士來創作更多正能量樂曲。</p>
+                    </div>
+                </div>
+                <div class="f-r_bottom" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+                    <div class="title2">
+                        <h4>無聊樂坊</h4>
+                    </div>
+                    <div class="main2">
+                        <div class="row">
+                            <div class="col-12 col-md-6">「無」：無為而治，無所不彈。</div>
+                            <div class="col-12 col-md-6">「聊」：談天、快樂、療癒之意。</div>
+                            <div class="col-12 col-md-6">「樂」：德音、雅樂。</div>
+                            <div class="col-12 col-md-6">「坊」：放鬆的小天地。</div>
+                        </div>
+                        希望來這裡的人們能藉由音樂的交流，遠離喧囂，使心靈回歸清明平和。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content2">
+        <h3>聊聊樂器</h3>
+        <p>Chat Musical instruments</p>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="swiper-container" id="aboutme1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="front">
+                                <h1 class="t-t">胡琴</h1>
+                                <img class="tool" src="img/card-17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="back" style="box-shadow: 5px 5px 15px rgba(88, 77, 54, 0.3);">
+                                <img class="tool" src="img/card-13.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="swiper-container" id="aboutme2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="front">
+                                <h1 class="t-t">琵琶</h1>
+                                <img class="tool" src="img/card-17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="back" style="box-shadow: 5px 5px 15px rgba(88, 77, 54, 0.3);">
+                                <img class="tool" src="img/card-15.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="swiper-container" id="aboutme3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="front">
+                                <h1 class="t-t">笛子</h1>
+                                <img class="tool" src="img/card-17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="back" style="box-shadow: 5px 5px 15px rgba(88, 77, 54, 0.3);">
+                                <img class="tool" src="img/card-14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="swiper-container" id="aboutme4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="front">
+                                <h1 class="t-t">揚琴</h1>
+                                <img class="tool" src="img/card-17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="back" style="box-shadow: 5px 5px 15px rgba(88, 77, 54, 0.3);">
+                                <img class="tool" src="img/card-16.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content3" data-aos="flip-up">
+        <p>～本樂坊歡迎各界愛樂人士～</p>
+        <p>提供新鮮手作飲料、點心</p>
+        <div class="price">
+            <p>手沖咖啡 $100元 3杯250元</p>
+            <p>沖泡咖啡 $ 50元 續杯25元</p>
+            <p>新鮮果汁 $ 50元 當令時蔬</p>
+        </div>
+        <p>供應時間：週一至週六　10:00~20:00</p>
+    </div>
+    <div id="content4">
+        <h3>聊聊餅乾</h3>
+        <p>Chat Cookies</p>        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right" data-aos-delay="100">
+                        <img class="content4-img" src="img/cookies-04.jpg" alt="">
+                        <div class="word" data-aos="fade-right" data-aos-delay="120">蔓越莓餅干</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right" data-aos-delay="50">
+                        <img class="content4-img" src="img/cookies-05.jpg" alt="">
+                        <div class="word" data-aos="fade-right" data-aos-delay="70">巧克力餅干</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right">
+                        <img class="content4-img" src="img/cookies-06.jpg " alt=" ">
+                        <div class="word">咖啡豆餅干</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right" data-aos-delay="100">
+                        <div data-aos="fade-right"></div>
+                        <img class="content4-img" src="img/cookies-07.jpg " alt=" ">
+                        <div class="word" data-aos="fade-right" data-aos-delay="120">抹茶餅干</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right" data-aos-delay="50">
+                        <div data-aos="fade-right"></div>
+                        <img class="content4-img" src="img/cookies-08.jpg " alt=" ">
+                        <div class="word" data-aos="fade-right" data-aos-delay="70">堅果餅干</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="content4-block" data-aos="fade-right">
+                        <div data-aos="fade-right"></div>
+                        <img class="content4-img" src="img/cookies-09.jpg " alt=" ">
+                        <div class="word" data-aos="fade-right" data-aos-delay="20">曲奇餅干</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <marquee direction="right" height="50" scrollamount="8" behavior="alternate" style="width:70%;margin:0 auto;display:block">
+            <h4>想體驗DIY手作餅乾的樂趣，請提前來電預約~</h4>
+        </marquee>
+    </div>
+
+    </div>
+    <div class="footer">
+        <p>412台中市大里區科技路50號&nbsp;&nbsp;&nbsp;&nbsp;電話：0912-345678&nbsp;&nbsp;&nbsp;&nbsp;開放時間：週一至週六&nbsp;10:00~20:00</p>
+        <HR color="black " size="5 " width="80% ">
+        <p>Copyright © 2018 無聊樂坊</p>
+    </div>
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <!-- 使用slider,連結js內的檔案 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js "></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="js/jquery.flip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+            disable: 'mobile'
+        });
+
+        // 翻轉卡片
+        let aboutme1 = new Swiper('#aboutme1', {
+            effect: "flip",
+            loop: true,
+            delay: 0,
+            noSwiping: true,
+            on: {
+                click: function () {
+                    aboutme1.slideNext(800)
+                },
+            },
+        })
+        let aboutme2 = new Swiper('#aboutme2', {
+            effect: "flip",
+            loop: true,
+            delay: 0,
+            noSwiping: true,
+            on: {
+                click: function () {
+                    aboutme2.slideNext(800)
+                },
+            },
+        })
+
+        let aboutme3 = new Swiper('#aboutme3', {
+            effect: "flip",
+            loop: true,
+            delay: 0,
+            noSwiping: true,
+            on: {
+                click: function () {
+                    aboutme3.slideNext(800)
+                },
+            },
+        })
+        let aboutme4 = new Swiper('#aboutme4', {
+            effect: "flip",
+            loop: true,
+            delay: 0,
+            noSwiping: true,
+            on: {
+                click: function () {
+                    aboutme4.slideNext(800)
+                },
+            },
+        })
+    </script>
+
+    <!-- 入口動畫 -->
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $("#madal").fadeOut(1500);
+            }, 5000);
+
+            setTimeout(function () {
+                $("body").css("overflow-y", "auto");
+            }, 5500);
+        });
+    </script>
+</body>
+
+</html>
