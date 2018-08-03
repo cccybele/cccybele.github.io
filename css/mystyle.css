@@ -55,7 +55,7 @@ h6 {
 }
 
 #content1 {
-    height: 450px;
+    height: 550px;
     position: relative;
     background-image: url("../img/bg-01.png");
     background-size: contain;
@@ -85,7 +85,7 @@ h6 {
 #content2 {
     width: 100%;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 h3,
@@ -133,7 +133,7 @@ h3,
     background-image: url('../img/drink-04.jpg');
     background-size: cover;
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-family:'Microsoft JhengHei';
 }
 
@@ -144,12 +144,12 @@ h3,
 
 .price {
     width: 250px;
-    height: 90px;
+    height: 100px;
     margin: 0 auto 20px auto;
     border: solid 2px;
     padding: 10px;
     border-style: double;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 .content4-block {
@@ -170,6 +170,9 @@ h3,
 }
 marquee h4 {
     display: inline-block;
+}
+#content4 .container {
+    argin-bottom: 30px;
 }
 
 .word {
@@ -231,8 +234,6 @@ hr {
         height: 800px;
     }
     .t-t {
-        position: absolute;
-        font-size: 30px;
         line-height: 200px;
         left: 50px;
     }
